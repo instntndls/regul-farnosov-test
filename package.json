@@ -12,15 +12,19 @@
   "dependencies": {
     "@mdi/font": "^7.4.47",
     "@nuxt/eslint": "^1.2.0",
+    "@pinia/nuxt": "^0.10.1",
     "eslint": "^9.22.0",
+    "jsonwebtoken": "^9.0.2",
     "nuxt": "^3.16.1",
     "nuxt-viewport": "^2.2.0",
+    "pinia": "^3.0.1",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@nuxtjs/device": "^3.2.4",
     "@nuxtjs/tailwindcss": "^6.13.2",
+    "@types/jsonwebtoken": "^9.0.9",
     "vite-plugin-vuetify": "^2.1.0",
     "vuetify": "^3.7.18",
     "vuetify-nuxt-module": "^0.18.4"

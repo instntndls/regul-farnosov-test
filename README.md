@@ -1,4 +1,4 @@
-# Nuxt Минимальный Стартер
+# Запуск приложения
 
 Ознакомьтесь с [документацией Nuxt](https://nuxt.com/docs/getting-started/introduction), чтобы узнать больше.
 

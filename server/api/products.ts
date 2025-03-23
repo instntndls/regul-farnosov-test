@@ -93,7 +93,7 @@ export default defineEventHandler((event) => {
     },
     {
       id: 7,
-      image: '/_nuxt/assets/images/Img-8.png',
+      image: '/_nuxt/assets/images/Img-7.png',
       views: Math.floor(Math.random() * 1000),
       days: Math.floor(Math.random() * 10),
       price: 17900,

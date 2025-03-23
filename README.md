@@ -1,10 +1,10 @@
-# Nuxt Minimal Starter
+# Nuxt Минимальный Стартер
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Ознакомьтесь с [документацией Nuxt](https://nuxt.com/docs/getting-started/introduction), чтобы узнать больше.
 
-## Setup
+## Установка
 
-Make sure to install dependencies:
+Убедитесь, что зависимости установлены:
 
 ```bash
 # npm
@@ -20,9 +20,9 @@ yarn install
 bun install
 ```
 
-## Development Server
+## Сервер разработки
 
-Start the development server on `http://localhost:3000`:
+Запустите сервер разработки на `http://localhost:3000`:
 
 ```bash
 # npm
@@ -38,9 +38,9 @@ yarn dev
 bun run dev
 ```
 
-## Production
+## Продакшен
 
-Build the application for production:
+Соберите приложение для продакшена:
 
 ```bash
 # npm
@@ -56,7 +56,7 @@ yarn build
 bun run build
 ```
 
-Locally preview production build:
+Локальный просмотр продакшен-сборки:
 
 ```bash
 # npm
@@ -72,4 +72,64 @@ yarn preview
 bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Ознакомьтесь с [документацией по деплою](https://nuxt.com/docs/getting-started/deployment) для получения дополнительной информации.
+
+## Форматирование кода
+
+Убедитесь, что ваш код соответствует правилам форматирования проекта:
+
+```bash
+npm run format
+```
+
+Эта команда запускает средство форматирования кода (например, Prettier), автоматически исправляя стиль кода и поддерживая единообразие.
+
+## Запуск тестов
+
+Запустите тестовый набор с помощью [Vitest](https://vitest.dev/):
+
+```bash
+npm run test
+```
+
+Эта команда выполняет модульные тесты, чтобы убедиться в корректности работы вашего приложения.
+
+## Требования
+
+Все перечисленные требования были выполнены:
+
+- ✅ Использование Vue 3, Nuxt 3
+- ✅ Использование Composition API
+- ✅ Использование UI-библиотеки (я выбрал Vuetify)
+- ✅ Авторизация через JWT
+- ✅ Pixel-perfect вёрстка одного из адаптивов (desktop или mobile)
+- ✅ Чистый и легко читаемый код с комментариями и документацией
+
+### Также выполнено:
+
+- ✅ Использование TypeScript
+- ✅ Настройка ESLint и Prettier
+- ✅ Применение библиотек для тестирования
+
+### Развёртывание проекта
+- Подключен `nuxt-viewport` для управления компонентами, используемыми только на мобильной или десктопной версии.
+
+### Авторизация
+- На роуте `/login` добавлена форма авторизации (логин, пароль).
+- Настроена JWT-авторизация.
+- Добавлены уведомления и валидация.
+- Данные для успешного входа:
+    - **Логин:** `admin`
+    - **Пароль:** `secret`
+
+### Защита маршрутов
+- Роут `/products` защищён от неавторизованных пользователей.
+- `/products` является основным маршрутом (реализован редирект с главной страницы через middleware).
+
+### Отображение данных
+- Заполнение роута `/products` компонентами согласно макетам в Figma.
+- Данные загружаются по API из трёх отдельных методов (используется `Nuxt Server Routes`):
+    - Общие данные о компании (название, логотип).
+    - Рейтинг и количество отзывов.
+    - Список товаров.
+
